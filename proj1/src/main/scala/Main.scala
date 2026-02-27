@@ -8,6 +8,7 @@ import scala.io.StdIn.readLine
     "12" -> Aufgabe12(),
     "13" -> Aufgabe13(),
     "22" -> Aufgabe22(),
+    "31" -> Aufgabe31(),
   )
 
   Iterator.continually[String](readLine("\nAufgabe auswahlen: ").trim)
