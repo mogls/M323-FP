@@ -1,5 +1,8 @@
-@main def hello(): Unit =
-  println("Hello world!")
-  println(msg)
+//> using scala 3.8.1
+import scala.io.StdIn
+import Aufgabe11
 
-def msg = "I was compiled by Scala 3. :)"
+@main def aufgabeAusfuhren(): Unit = {
+  var aufgabe: AufgabeTrait
+
+}
