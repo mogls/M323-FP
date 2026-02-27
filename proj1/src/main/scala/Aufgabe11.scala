@@ -1,5 +1,5 @@
 class Aufgabe11 extends AufgabeTrait {
-  def aufgabe(): Unit = {
+  override def aufgabe(): Unit = {
     val score1: Int = calculateScore("Test1")
     val score2: Int = wordScore("Test1")
     val score3: Int = wordScoreTotal("Test1")

@@ -1,8 +1,16 @@
 //> using scala 3.8.1
-import scala.io.StdIn
-import Aufgabe11
+import scala.io.StdIn.readLine
+
 
 @main def aufgabeAusfuhren(): Unit = {
-  var aufgabe: AufgabeTrait
+  val aufgaben: Map[String, AufgabeTrait] = Map(
+    "11" -> Aufgabe11(),
+    "12" -> Aufgabe12(),
+    "13" -> Aufgabe13(),
+    "22" -> Aufgabe22(),
+  )
 
+  Iterator.continually[String](readLine("\nAufgabe auswahlen: ").trim)
+    .takeWhile (aufgaben.contains)
+    .foreach { id => aufgaben(id).aufgabe() }
 }
